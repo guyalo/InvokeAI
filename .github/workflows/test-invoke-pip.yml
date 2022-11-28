@@ -30,25 +30,29 @@ jobs:
             default-shell: bash -l {0}
             curl-command: curl
             github-env: $GITHUB_ENV
-            python-path: ${{ env.pythonLocation }}/bin/
+            python-path: /bin/python
+            pip-path: /bin/pip
           - requirements-file: requirements-lin-amd.txt
             os: ubuntu-latest
             default-shell: bash -l {0}
             curl-command: curl
             github-env: $GITHUB_ENV
-            python-path: ${{ env.pythonLocation }}/bin/
+            python-path: /bin/python
+            pip-path: /bin/pip
           - requirements-file: requirements-mac-mps-cpu.txt
             os: macOS-12
             default-shell: bash -l {0}
             curl-command: curl
             github-env: $GITHUB_ENV
-            python-path: ${{ env.pythonLocation }}/bin/
+            python-path: /bin/python
+            pip-path: /bin/pip
           - requirements-file: requirements-win-colab-cuda.txt
             os: windows-latest
             default-shell: pwsh
             curl-command: curl.exe
             github-env: $env:GITHUB_ENV
-            python-path: ${{ env.pythonLocation }}\bin\
+            python-path: \bin\python.exe
+            pip-path: \bin\pip.exe
           - stable-diffusion-model: stable-diffusion-1.5
             stable-diffusion-model-url: https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
             stable-diffusion-model-dl-path: models/ldm/stable-diffusion-v1
@@ -93,7 +97,7 @@ jobs:
           cache-dependency-path: ${{ matrix.requirements-file }}
 
       - name: install requirements
-        run: ${{ matrix.python-path }}pip install -r '${{ matrix.requirements-file }}'
+        run: ${{ env.pythonLocation }}${{ matrix.pip-path }} install -r '${{ matrix.requirements-file }}'
 
       - name: Use Cached Stable Diffusion Model
         id: cache-sd-model
@@ -114,13 +118,13 @@ jobs:
       - name: run configure_invokeai.py
         id: run-preload-models
         run: |
-          ${{ matrix.python-path }}python scripts/configure_invokeai.py --no-interactive --yes
+          ${{ env.pythonLocation }}${{ matrix.python-path }} scripts/configure_invokeai.py --no-interactive --yes
 
       - name: Run the tests
         id: run-tests
         if: ${{ matrix.os }} != windows-latest
         run: |
-          time ${{ matrix.python-path }}python scripts/invoke.py \
+          time ${{ env.pythonLocation }}${{ matrix.python-path }} scripts/invoke.py \
             --model ${{ matrix.stable-diffusion-model }} \
             --from_file ${{ env.TEST_PROMPTS }} \
             --root="${{ env.INVOKEAI_ROOT }}" \
