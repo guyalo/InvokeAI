@@ -4,6 +4,7 @@ on:
     branches:
       - 'main'
       - 'development'
+      - 'add-windows-to-workflows'
   pull_request:
     branches:
       - 'main'
@@ -19,6 +20,7 @@ jobs:
           - requirements-lin-cuda.txt
           - requirements-lin-amd.txt
           - requirements-mac-mps-cpu.txt
+          - requirements-win-colab-cuda.txt
         python-version:
           # - '3.9'
           - '3.10'
@@ -26,12 +28,23 @@ jobs:
           - requirements-file: requirements-lin-cuda.txt
             os: ubuntu-latest
             default-shell: bash -l {0}
+            curl-command: curl
+            github-env: GITHUB_ENV
           - requirements-file: requirements-lin-amd.txt
             os: ubuntu-latest
             default-shell: bash -l {0}
+            curl-command: curl
+            github-env: GITHUB_ENV
           - requirements-file: requirements-mac-mps-cpu.txt
             os: macOS-12
             default-shell: bash -l {0}
+            curl-command: curl
+            github-env: GITHUB_ENV
+          - requirements-file: requirements-win-colab-cuda.txt
+            os: windows-latest
+            default-shell: pwsh
+            curl-command: curl.exe
+            github-env: env.GITHUB_ENV
           - stable-diffusion-model: stable-diffusion-1.5
             stable-diffusion-model-url: https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
             stable-diffusion-model-dl-path: models/ldm/stable-diffusion-v1
@@ -75,9 +88,6 @@ jobs:
           cache: 'pip'
           cache-dependency-path: ${{ matrix.requirements-file }}
 
-      # - name: install dependencies
-      #   run: ${{ env.pythonLocation }}/bin/pip install --upgrade pip setuptools wheel
-
       - name: install requirements
         run: ${{ env.pythonLocation }}/bin/pip install -r '${{ matrix.requirements-file }}'
 
@@ -95,10 +105,7 @@ jobs:
         if: ${{ steps.cache-sd-model.outputs.cache-hit != 'true' }}
         run: |
           mkdir -p "${{ env.INVOKEAI_ROOT }}/${{ matrix.stable-diffusion-model-dl-path }}"
-          curl \
-            -H "Authorization: Bearer ${{ secrets.HUGGINGFACE_TOKEN }}" \
-            -o "${{ env.INVOKEAI_ROOT }}/${{ matrix.stable-diffusion-model-dl-path }}/${{ matrix.stable-diffusion-model-dl-name }}" \
-            -L ${{ matrix.stable-diffusion-model-url }}
+          ${{ matrix.curl-command }} -H "Authorization: Bearer ${{ secrets.HUGGINGFACE_TOKEN }}" -o "${{ env.INVOKEAI_ROOT }}/${{ matrix.stable-diffusion-model-dl-path }}/${{ matrix.stable-diffusion-model-dl-name }}" -L ${{ matrix.stable-diffusion-model-url }}
 
       - name: run configure_invokeai.py
         id: run-preload-models
@@ -107,6 +114,7 @@ jobs:
 
       - name: Run the tests
         id: run-tests
+        if: ${{ matrix.os }} != windows-latest
         run: |
           time ${{ env.pythonLocation }}/bin/python scripts/invoke.py \
             --model ${{ matrix.stable-diffusion-model }} \
@@ -116,6 +124,7 @@ jobs:
 
       - name: Archive results
         id: archive-results
+        if: ${{ matrix.os }} != windows-latest
         uses: actions/upload-artifact@v3
         with:
           name: results_${{ matrix.requirements-file }}_${{ matrix.python-version }}
