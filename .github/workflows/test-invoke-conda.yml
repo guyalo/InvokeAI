@@ -26,22 +26,22 @@ jobs:
             os: ubuntu-latest
             default-shell: bash -l {0}
             curl-command: curl
-            github-env: GITHUB_ENV
+            github-env: $GITHUB_ENV
           - environment-yaml: environment-lin-cuda.yml
             os: ubuntu-latest
             default-shell: bash -l {0}
             curl-command: curl
-            github-env: GITHUB_ENV
+            github-env: $GITHUB_ENV
           - environment-yaml: environment-mac.yml
             os: macos-12
             default-shell: bash -l {0}
             curl-command: curl
-            github-env: GITHUB_ENV
+            github-env: $GITHUB_ENV
           - environment-yaml: environment-win-cuda.yml
             os: windows-latest
             default-shell: pwsh
             curl-command: curl.exe
-            github-env: env.GITHUB_ENV
+            github-env: $env:GITHUB_ENV
           - stable-diffusion-model: stable-diffusion-1.5
             stable-diffusion-model-url: https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
             stable-diffusion-model-dl-path: models/ldm/stable-diffusion-v1
