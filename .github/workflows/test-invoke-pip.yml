@@ -51,8 +51,8 @@ jobs:
             default-shell: pwsh
             curl-command: curl.exe
             github-env: $env:GITHUB_ENV
-            python-path: \bin\python.exe
-            pip-path: \bin\pip.exe
+            python-path: \bin\python
+            pip-path: \bin\pip
           - stable-diffusion-model: stable-diffusion-1.5
             stable-diffusion-model-url: https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
             stable-diffusion-model-dl-path: models/ldm/stable-diffusion-v1
