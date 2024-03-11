@@ -24,7 +24,7 @@ addict==2.4.0 \
     --hash=sha256:249bb56bbfd3cdc2a004ea0ff4c2b6ddc84d53bc2194761636eb314d5cfa5dfc \
     --hash=sha256:b3b2210e0e067a281f5646c8c5db92e99b7231ea8b0eb5f74dbdf9e259d4e494
     # via basicsr
-aiohttp==3.8.3 \
+aiohttp==3.9.2 \
     --hash=sha256:02f9a2c72fc95d59b881cf38a4b2be9381b9527f9d328771e90f72ac76f31ad8 \
     --hash=sha256:059a91e88f2c00fe40aed9031b3606c3f311414f86a90d696dd982e7aec48142 \
     --hash=sha256:05a3c31c6d7cd08c149e50dc7aa2568317f5844acd745621983380597f027a18 \
@@ -161,7 +161,7 @@ cachetools==5.2.0 \
     # via
     #   google-auth
     #   streamlit
-certifi==2022.9.24 \
+certifi==2023.7.22 \
     --hash=sha256:0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14 \
     --hash=sha256:90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382
     # via
@@ -316,7 +316,7 @@ filelock==3.8.0 \
 filterpy==1.4.5 \
     --hash=sha256:4f2a4d39e4ea601b9ab42b2db08b5918a9538c168cff1c6895ae26646f3d73b1
     # via facexlib
-flask==2.2.2 \
+flask==2.2.5 \
     --hash=sha256:642c450d19c4ad482f96729bd2a8f6d32554aa1e231f4f6b4e7e5264b16cca2b \
     --hash=sha256:b9c46cc36662a7949f34b52d8ec7bb59c0d74ba08ba6cb9ce9adc1d8676d9526
     # via
@@ -334,7 +334,7 @@ flaskwebgui==0.3.7 \
     --hash=sha256:4a69955308eaa8bb256ba04a994dc8f58a48dcd6f9599694ab1bcd9f43d88a5d \
     --hash=sha256:535974ce2672dcc74787c254de24cceed4101be75d96952dae82014dd57f061e
     # via -r binary_installer/requirements.in
-fonttools==4.38.0 \
+fonttools==4.43.0 \
     --hash=sha256:2bb244009f9bf3fa100fc3ead6aeb99febe5985fa20afbfbaa2f8946c2fbdaf1 \
     --hash=sha256:820466f43c8be8c3009aef8b87e785014133508f0de64ec469e4efb643ae54fb
     # via matplotlib
@@ -409,7 +409,7 @@ ftfy==6.1.1 \
     --hash=sha256:0ffd33fce16b54cccaec78d6ec73d95ad370e5df5a25255c8966a6147bd667ca \
     --hash=sha256:bfc2019f84fcd851419152320a6375604a0f1459c281b5b199b2cd0d2e727f8f
     # via clip
-future==0.18.2 \
+future==0.18.3 \
     --hash=sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d
     # via
     #   basicsr
@@ -427,7 +427,7 @@ gitdb==4.0.9 \
     --hash=sha256:8033ad4e853066ba6ca92050b9df2f89301b8fc8bf7e9324d412a63f8bf1a8fd \
     --hash=sha256:bac2fd45c0a1c9cf619e63a90d62bdc63892ef92387424b855792a6cabe789aa
     # via gitpython
-gitpython==3.1.29 \
+gitpython==3.1.41 \
     --hash=sha256:41eea0deec2deea139b459ac03656f0dd28fc4a3387240ec1d3c259a2c47850f \
     --hash=sha256:cc36bfc4a3f913e66805a28e84703e419d9c264c1077e537b54f0e1af85dbefd
     # via
@@ -508,7 +508,7 @@ greenlet==2.0.0.post0 \
     --hash=sha256:eb36b6570646227a63eda03916f1cc6f3744ee96d28f7a0a5629c59267a8055f \
     --hash=sha256:f8c425a130e04d5404edaf6f5906e5ab12f3aa1168a1828aba6dfadac5910469
     # via eventlet
-grpcio==1.50.0 \
+grpcio==1.53.2 \
     --hash=sha256:05f7c248e440f538aaad13eee78ef35f0541e73498dd6f832fe284542ac4b298 \
     --hash=sha256:080b66253f29e1646ac53ef288c12944b131a2829488ac3bac8f52abb4413c0d \
     --hash=sha256:12b479839a5e753580b5e6053571de14006157f2ef9b71f38c56dc9b23b95ad6 \
@@ -557,7 +557,7 @@ grpcio==1.50.0 \
     # via
     #   tb-nightly
     #   tensorboard
-huggingface-hub==0.10.1 \
+huggingface-hub==0.13.4 \
     --hash=sha256:5c188d5b16bec4b78449f8681f9975ff9d321c16046cc29bcf0d7e464ff29276 \
     --hash=sha256:dc3b0e9a663fe6cad6a8522055c02a9d8673dbd527223288e2442bc028c253db
     # via
@@ -595,7 +595,7 @@ itsdangerous==2.1.2 \
     --hash=sha256:2c2349112351b88699d8d4b6b075022c0808887cb7ad10069318a8b0bc88db44 \
     --hash=sha256:5dbbc68b317e5e42f327f9021763545dc3fc3bfe22e6deb96aaf1fc38874156a
     # via flask
-jinja2==3.1.2 \
+jinja2==3.1.3 \
     --hash=sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852 \
     --hash=sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61
     # via
@@ -1021,7 +1021,7 @@ omegaconf==2.2.3 \
     --hash=sha256:59ff9fba864ffbb5fb710b64e8a9ba37c68fa339a2e2bb4f1b648d6901552523 \
     --hash=sha256:d6f2cbf79a992899eb76c6cb1aedfcf0fe7456a8654382edd5ee0c1b199c0657
     # via taming-transformers-rom1504
-opencv-python==4.6.0.66 \
+opencv-python==4.8.1.78 \
     --hash=sha256:0dc82a3d8630c099d2f3ac1b1aabee164e8188db54a786abb7a4e27eba309440 \
     --hash=sha256:5af8ba35a4fcb8913ffb86e92403e9a656a4bff4a645d196987468f0f8947875 \
     --hash=sha256:6e32af22e3202748bd233ed8f538741876191863882eba44e332d1a34993165b \
@@ -1035,7 +1035,7 @@ opencv-python==4.6.0.66 \
     #   facexlib
     #   gfpgan
     #   realesrgan
-opencv-python-headless==4.6.0.66 \
+opencv-python-headless==4.8.1.78 \
     --hash=sha256:21e70f8b0c04098cdf466d27184fe6c3820aaef944a22548db95099959c95889 \
     --hash=sha256:2c032c373e447c3fc2a670bca20e2918a1205a6e72854df60425fd3f82c78c32 \
     --hash=sha256:3bacd806cce1f1988e58f3d6f761538e0215d6621d316de94c009dc0acbd6ad3 \
@@ -1094,11 +1094,11 @@ pandas==1.5.1 \
 pathtools==0.1.2 \
     --hash=sha256:7c35c5421a39bb82e58018febd90e3b6e5db34c5443aaaf742b3f33d4655f1c0
     # via wandb
-picklescan==0.0.5 \
+picklescan==0.0.13 \
     --hash=sha256:368cf1b9a075bc1b6460ad82b694f260532b836c82f99d13846cd36e1bbe7f9a \
     --hash=sha256:57153eca04d5df5009f2cdd595aef261b8a6f27e03046a1c84f672aa6869c592
     # via -r binary_installer/requirements.in
-pillow==9.3.0 \
+pillow==10.2.0 \
     --hash=sha256:03150abd92771742d4a8cd6f2fa6246d847dcd2e332a18d0c15cc75bf6703040 \
     --hash=sha256:073adb2ae23431d3b9bcbcff3fe698b62ed47211d0716b067385538a1b0f28b8 \
     --hash=sha256:0b07fffc13f474264c336298d1b4ce01d9c5a011415b79d4ee5527bb69ae6f65 \
@@ -1248,7 +1248,7 @@ psutil==5.9.3 \
     # via
     #   accelerate
     #   wandb
-pyarrow==10.0.0 \
+pyarrow==14.0.1 \
     --hash=sha256:10e031794d019425d34406edffe7e32157359e9455f9edb97a1732f8dabf802f \
     --hash=sha256:25f51dca780fc22cfd7ac30f6bdfe70eb99145aee9acfda987f2c49955d66ed9 \
     --hash=sha256:2d326a9d47ac237d81b8c4337e9d30a0b361835b536fc7ea53991455ce761fbd \
@@ -1290,7 +1290,7 @@ pydeprecate==0.3.2 \
     --hash=sha256:d481116cc5d7f6c473e7c4be820efdd9b90a16b594b350276e9e66a6cb5bdd29 \
     --hash=sha256:ed86b68ed837e6465245904a3de2f59bf9eef78ac7a2502ee280533d04802457
     # via pytorch-lightning
-pygments==2.13.0 \
+pygments==2.15.0 \
     --hash=sha256:56a8508ae95f98e2b9bdf93a6be5ae3f7d8af858b43e02c5a2ff083726be40c1 \
     --hash=sha256:f643f331ab57ba3c9d89212ee4a2dabc6e94f117cf4eefde99a0574720d14c42
     # via rich
@@ -1541,7 +1541,7 @@ regex==2022.10.31 \
     #   clip
     #   diffusers
     #   transformers
-requests==2.25.1 \
+requests==2.31.0 \
     --hash=sha256:27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804 \
     --hash=sha256:c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e
     # via
@@ -1671,7 +1671,7 @@ send2trash==1.8.0 \
     --hash=sha256:d2c24762fd3759860a0aff155e45871447ea58d2be6bdd39b5c8f966a0c99c2d \
     --hash=sha256:f20eaadfdb517eaca5ce077640cb261c7d2698385a6a0f072a4a5447fd49fa08
     # via -r binary_installer/requirements.in
-sentry-sdk==1.10.1 \
+sentry-sdk==1.14.0 \
     --hash=sha256:06c0fa9ccfdc80d7e3b5d2021978d6eb9351fa49db9b5847cf4d1f2a473414ad \
     --hash=sha256:105faf7bd7b7fa25653404619ee261527266b14103fe1389e0ce077bd23a9691
     # via wandb
@@ -1758,7 +1758,7 @@ smmap==5.0.0 \
     --hash=sha256:2aba19d6a040e78d8b09de5c57e96207b09ed71d8e55ce0959eeee6c8e190d94 \
     --hash=sha256:c840e62059cd3be204b0c9c9f74be2c09d5648eddd4580d9314c3ecde0b30936
     # via gitdb
-streamlit==1.14.0 \
+streamlit==1.30.0 \
     --hash=sha256:62556d873567e1b3427bcd118a57ee6946619f363bd6bba38df2d1f8225ecba0 \
     --hash=sha256:e078b8143d150ba721bdb9194218e311c5fe1d6d4156473a2dea6cc848a6c9fc
     # via -r binary_installer/requirements.in
@@ -1904,7 +1904,7 @@ torchvision==0.13.0+cu116 ; platform_system == "Linux" or platform_system == "Wi
     #   realesrgan
     #   taming-transformers-rom1504
     #   torch-fidelity
-tornado==6.2 \
+tornado==6.3.3 \
     --hash=sha256:1d54d13ab8414ed44de07efecb97d4ef7c39f7438cf5e976ccd356bebb1b5fca \
     --hash=sha256:20f638fd8cc85f3cbae3c732326e96addff0a15e22d80f049e00121651e82e72 \
     --hash=sha256:5c87076709343557ef8032934ce5f637dbb552efa7b21d08e89ae7619ed0eb23 \
@@ -1936,7 +1936,7 @@ tqdm==4.64.1 \
 trampoline==0.1.2 \
     --hash=sha256:36cc9a4ff9811843d177fc0e0740efbd7da39eadfe6e50c9e2937cbc06d899d9
     # via torchsde
-transformers==4.24.0 \
+transformers==4.37.0 \
     --hash=sha256:486f353a8e594002e48be0e2aba723d96eda839e63bfe274702a4b5eda85559b \
     --hash=sha256:b7ab50039ef9bf817eff14ab974f306fd20a72350bdc9df3a858fd009419322e
     # via -r binary_installer/requirements.in
@@ -1958,13 +1958,13 @@ tzlocal==4.2 \
     --hash=sha256:89885494684c929d9191c57aa27502afc87a579be5cdd3225c77c463ea043745 \
     --hash=sha256:ee5842fa3a795f023514ac2d801c4a81d1743bbe642e3940143326b3a00addd7
     # via streamlit
-urllib3==1.26.12 \
+urllib3==1.26.18 \
     --hash=sha256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e \
     --hash=sha256:b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997
     # via
     #   requests
     #   sentry-sdk
-validators==0.18.2 \
+validators==0.21.0 \
     --hash=sha256:0143dcca8a386498edaf5780cbd5960da1a4c85e0719f3ee5c9b41249c4fefbd \
     --hash=sha256:37cd9a9213278538ad09b5b9f9134266e7c226ab1fede1d500e29e0a8fbb9ea6
     # via streamlit
@@ -2003,7 +2003,7 @@ wcwidth==0.2.5 \
     --hash=sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784 \
     --hash=sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83
     # via ftfy
-werkzeug==2.2.2 \
+werkzeug==2.3.8 \
     --hash=sha256:7ea2d48322cc7c0f8b3a215ed73eabd7b5d75d0b50e31ab006286ccff9e00b8f \
     --hash=sha256:f979ab81f58d7318e064e99c4506445d60135ac5cd2e177a2de0089bfd4c9bd5
     # via
