@@ -558,7 +558,7 @@ huggingface-hub==0.10.1 \
     # via
     #   diffusers
     #   transformers
-idna==2.10 \
+idna==3.7 \
     --hash=sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6 \
     --hash=sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0
     # via
@@ -1937,7 +1937,7 @@ tqdm==4.64.1 \
     #   taming-transformers-rom1504
     #   torch-fidelity
     #   transformers
-transformers==4.24.0 \
+transformers==4.38.0 \
     --hash=sha256:486f353a8e594002e48be0e2aba723d96eda839e63bfe274702a4b5eda85559b \
     --hash=sha256:b7ab50039ef9bf817eff14ab974f306fd20a72350bdc9df3a858fd009419322e
     # via -r installer/requirements.in
