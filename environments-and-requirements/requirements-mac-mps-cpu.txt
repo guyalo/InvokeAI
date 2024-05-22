@@ -4,3 +4,4 @@ protobuf==3.19.6
 torch<1.13.0
 torchvision<0.14.0
 -e .
+requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
