@@ -5,3 +5,4 @@ basicsr==1.4.1
 torch==1.12.1
 torchvision==0.13.1
 -e .
+urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
