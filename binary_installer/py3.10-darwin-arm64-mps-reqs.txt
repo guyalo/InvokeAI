@@ -1669,7 +1669,7 @@ send2trash==1.8.0 \
     --hash=sha256:d2c24762fd3759860a0aff155e45871447ea58d2be6bdd39b5c8f966a0c99c2d \
     --hash=sha256:f20eaadfdb517eaca5ce077640cb261c7d2698385a6a0f072a4a5447fd49fa08
     # via -r installer/requirements.in
-sentry-sdk==1.10.1 \
+sentry-sdk==2.8.0 \
     --hash=sha256:06c0fa9ccfdc80d7e3b5d2021978d6eb9351fa49db9b5847cf4d1f2a473414ad \
     --hash=sha256:105faf7bd7b7fa25653404619ee261527266b14103fe1389e0ce077bd23a9691
     # via wandb
