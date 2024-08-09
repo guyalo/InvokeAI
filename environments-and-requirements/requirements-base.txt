@@ -21,7 +21,7 @@ pillow
 pip>=22
 pudb
 pyreadline3
-pytorch-lightning==1.7.7
+pytorch-lightning==2.4.0
 realesrgan
 requests==2.25.1
 scikit-image>=0.19
