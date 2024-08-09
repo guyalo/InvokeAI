@@ -1350,7 +1350,7 @@ python-socketio==5.7.2 \
     --hash=sha256:92395062d9db3c13d30e7cdedaa0e1330bba78505645db695415f9a3c628d097 \
     --hash=sha256:d9a9f047e6fdd306c852fbac36516f4b495c2096f8ad9ceb8803b8e5ff5622e3
     # via flask-socketio
-pytorch-lightning==1.7.7 \
+pytorch-lightning==2.4.0 \
     --hash=sha256:27c2dd01a18db2415168e3fa3775ccb5a1fa1e2961a50439ad9365507fe9d4ae \
     --hash=sha256:4438b8284d7f7fdb06cf3566a7b5b6f102ac8971cf7bb6d3f1b1de64628241f3
     # via taming-transformers-rom1504
