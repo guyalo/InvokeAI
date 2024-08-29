@@ -317,7 +317,7 @@ flask==2.2.2 \
     # via
     #   flask-cors
     #   flask-socketio
-flask-cors==3.0.10 \
+flask-cors==4.0.1 \
     --hash=sha256:74efc975af1194fc7891ff5cd85b0f7478be4f7f59fe158102e91abb72bb4438 \
     --hash=sha256:b60839393f3b84a0f3746f6cdca56c1ad7426aa738b70d6c61375857823181de
     # via -r installer/requirements.in
