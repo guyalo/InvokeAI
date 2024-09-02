@@ -1989,7 +1989,7 @@ validators==0.18.2 \
     --hash=sha256:0143dcca8a386498edaf5780cbd5960da1a4c85e0719f3ee5c9b41249c4fefbd \
     --hash=sha256:37cd9a9213278538ad09b5b9f9134266e7c226ab1fede1d500e29e0a8fbb9ea6
     # via streamlit
-wandb==0.13.5 \
+wandb==0.15.12 \
     --hash=sha256:11f30a22e30abaa9c187e8b6aa4c12d76160b40bbe98a6f14b0dde9297bbfbe2 \
     --hash=sha256:60d5bcc524b8a314c8e072c03f7702dbd5406261b00a4ce75e7556b805fdc765
     # via k-diffusion
