@@ -291,7 +291,7 @@ entrypoints==0.4 \
     --hash=sha256:b706eddaa9218a19ebcd67b56818f05bb27589b1ca9e8d797b74affad4ccacd4 \
     --hash=sha256:f174b5ff827504fd3cd97cc3f8649f3693f51538c7e4bdf3ef002c8429d42f9f
     # via altair
-eventlet==0.33.1 \
+eventlet==0.37.0 \
     --hash=sha256:a085922698e5029f820cf311a648ac324d73cec0e4792877609d978a4b5bbf31 \
     --hash=sha256:afbe17f06a58491e9aebd7a4a03e70b0b63fd4cf76d8307bae07f280479b1515
     # via -r installer/requirements.in
