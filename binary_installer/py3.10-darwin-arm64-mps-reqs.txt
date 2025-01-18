@@ -1957,7 +1957,7 @@ tqdm==4.64.1 \
 trampoline==0.1.2 \
     --hash=sha256:36cc9a4ff9811843d177fc0e0740efbd7da39eadfe6e50c9e2937cbc06d899d9
     # via torchsde
-transformers==4.24.0 \
+transformers==4.48.0 \
     --hash=sha256:486f353a8e594002e48be0e2aba723d96eda839e63bfe274702a4b5eda85559b \
     --hash=sha256:b7ab50039ef9bf817eff14ab974f306fd20a72350bdc9df3a858fd009419322e
     # via -r installer/requirements.in
