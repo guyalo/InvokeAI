@@ -1085,7 +1085,7 @@ pandas==1.5.1 \
 pathtools==0.1.2 \
     --hash=sha256:7c35c5421a39bb82e58018febd90e3b6e5db34c5443aaaf742b3f33d4655f1c0
     # via wandb
-picklescan==0.0.5 \
+picklescan==0.0.21 \
     --hash=sha256:368cf1b9a075bc1b6460ad82b694f260532b836c82f99d13846cd36e1bbe7f9a \
     --hash=sha256:57153eca04d5df5009f2cdd595aef261b8a6f27e03046a1c84f672aa6869c592
     # via -r installer/requirements.in
