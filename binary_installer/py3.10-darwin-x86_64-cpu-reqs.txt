@@ -503,7 +503,7 @@ greenlet==2.0.0.post0 \
     --hash=sha256:eb36b6570646227a63eda03916f1cc6f3744ee96d28f7a0a5629c59267a8055f \
     --hash=sha256:f8c425a130e04d5404edaf6f5906e5ab12f3aa1168a1828aba6dfadac5910469
     # via eventlet
-grpcio==1.50.0 \
+grpcio==1.58.3 \
     --hash=sha256:05f7c248e440f538aaad13eee78ef35f0541e73498dd6f832fe284542ac4b298 \
     --hash=sha256:080b66253f29e1646ac53ef288c12944b131a2829488ac3bac8f52abb4413c0d \
     --hash=sha256:12b479839a5e753580b5e6053571de14006157f2ef9b71f38c56dc9b23b95ad6 \
@@ -1337,7 +1337,7 @@ python-socketio==5.7.2 \
     --hash=sha256:92395062d9db3c13d30e7cdedaa0e1330bba78505645db695415f9a3c628d097 \
     --hash=sha256:d9a9f047e6fdd306c852fbac36516f4b495c2096f8ad9ceb8803b8e5ff5622e3
     # via flask-socketio
-pytorch-lightning==1.7.7 \
+pytorch-lightning==2.4.0 \
     --hash=sha256:27c2dd01a18db2415168e3fa3775ccb5a1fa1e2961a50439ad9365507fe9d4ae \
     --hash=sha256:4438b8284d7f7fdb06cf3566a7b5b6f102ac8971cf7bb6d3f1b1de64628241f3
     # via taming-transformers-rom1504
@@ -1937,7 +1937,7 @@ tqdm==4.64.1 \
     #   taming-transformers-rom1504
     #   torch-fidelity
     #   transformers
-transformers==4.24.0 \
+transformers==4.48.0 \
     --hash=sha256:486f353a8e594002e48be0e2aba723d96eda839e63bfe274702a4b5eda85559b \
     --hash=sha256:b7ab50039ef9bf817eff14ab974f306fd20a72350bdc9df3a858fd009419322e
     # via -r installer/requirements.in
