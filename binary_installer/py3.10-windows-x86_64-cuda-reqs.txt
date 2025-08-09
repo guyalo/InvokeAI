@@ -1844,7 +1844,7 @@ toolz==0.12.0 \
     --hash=sha256:2059bd4148deb1884bb0eb770a3cde70e7f954cfbbdc2285f1f2de01fd21eb6f \
     --hash=sha256:88c570861c440ee3f2f6037c4654613228ff40c93a6c25e0eba70d17282c6194
     # via altair
-torch==1.12.0+cu116 ; platform_system == "Linux" or platform_system == "Windows" \
+torch==2.8.0+cu116 ; platform_system == "Linux" or platform_system == "Windows" \
     --hash=sha256:1d9557d1e871794a31a71c40dec8589d6c3347f3f2953a8dd74cfd58e1ecb52e \
     --hash=sha256:72538e4505087668a4642f861578dfed470fae5da20b1758b0f34e4a070d6b21 \
     --hash=sha256:74f5b137190a6face6859d630f129289e7fae6a4d9a747430b3b5d5c6297a3ae \
@@ -1940,7 +1940,7 @@ tqdm==4.64.1 \
 trampoline==0.1.2 \
     --hash=sha256:36cc9a4ff9811843d177fc0e0740efbd7da39eadfe6e50c9e2937cbc06d899d9
     # via torchsde
-transformers==4.24.0 \
+transformers==4.53.0 \
     --hash=sha256:486f353a8e594002e48be0e2aba723d96eda839e63bfe274702a4b5eda85559b \
     --hash=sha256:b7ab50039ef9bf817eff14ab974f306fd20a72350bdc9df3a858fd009419322e
     # via -r installer/requirements.in
