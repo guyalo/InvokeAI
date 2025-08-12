@@ -1826,7 +1826,7 @@ toolz==0.12.0 \
     --hash=sha256:2059bd4148deb1884bb0eb770a3cde70e7f954cfbbdc2285f1f2de01fd21eb6f \
     --hash=sha256:88c570861c440ee3f2f6037c4654613228ff40c93a6c25e0eba70d17282c6194
     # via altair
-torch==1.12.0 ; platform_system == "Darwin" \
+torch==2.8.0 ; platform_system == "Darwin" \
     --hash=sha256:0399746f83b4541bcb5b219a18dbe8cade760aba1c660d2748a38c6dc338ebc7 \
     --hash=sha256:0986685f2ec8b7c4d3593e8cfe96be85d462943f1a8f54112fc48d4d9fbbe903 \
     --hash=sha256:13c7cca6b2ea3704d775444f02af53c5f072d145247e17b8cd7813ac57869f03 \
@@ -1937,7 +1937,7 @@ tqdm==4.64.1 \
     #   taming-transformers-rom1504
     #   torch-fidelity
     #   transformers
-transformers==4.24.0 \
+transformers==4.53.0 \
     --hash=sha256:486f353a8e594002e48be0e2aba723d96eda839e63bfe274702a4b5eda85559b \
     --hash=sha256:b7ab50039ef9bf817eff14ab974f306fd20a72350bdc9df3a858fd009419322e
     # via -r installer/requirements.in
